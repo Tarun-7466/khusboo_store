@@ -12,6 +12,7 @@ body,
 
 header {
   display: flex;
+  text-transform: uppercase;
   justify-content: center;
   align-items: center;
 
@@ -29,10 +30,18 @@ header {
 .topnav {
   color: #ffff;
   width: 90%;
-  height: 4vw;
+  height: 3.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+a{
+  color:#374a21c3 ;
+  font-weight:bold;
+}
+
+.logo h3{
+  color: #8ec449;
 }
 
 .navicons img {
