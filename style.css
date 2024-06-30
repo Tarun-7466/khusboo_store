@@ -4,10 +4,15 @@
   font-family: "Gilroy";
 }
 
-body,
+body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 #app {
   width: 100%;
   height: 100%
+
 }
 
 header {
@@ -29,7 +34,7 @@ header {
 
 .topnav {
   color: #ffff;
-  width: 90%;
+  width: 88%;
   height: 3.5vw;
   display: flex;
   justify-content: space-between;
@@ -47,6 +52,12 @@ a{
 .navicons img {
   width: 1.5vw;
   padding-left: 1vw;
+}
+.navicons img:hover{
+  /* padding-left: 1.2vw; */
+  background-color:#8ec449;
+  color: #fff;
+  cursor: pointer;
 }
 
 .bottomnav {
@@ -100,22 +111,38 @@ a{
 }
 
 #grocery-item {
-  width: 37%;
-  padding: 0.6vw 3vw;
+  width: 30%;
+  padding: 0.7vw 3vw;
   font-size: 1.5rem;
   font-weight: 500;
+  background-color: #d1f1a9;
+  border: none;
+}
+#grocery-item, ul, img, button, a:hover{
+  cursor: pointer;
 }
 
 .search input {
   width: 60%;
   padding: 1vw;
+  border: 2px solid #d1f1a9;
+}
+.search input:focus{
+  border-color: #d1f1a9;
+  mask-border-outset: #8ec449;
+  border: 2px solid #8ec449;
+  cursor: pointer;
 }
 
 .search button {
-  padding: 0.8vw 1.5vw;
-  background-color: #8ec449;
+  padding: 0.7vw 1.5vw;
+  background-color: #d1f1a9;
   border-radius: 5%;
   border: none;
+}
+.search button:hover{
+  background-color: #8ec449;
+  cursor: pointer;
 }
 
 
